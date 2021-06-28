@@ -1,0 +1,723 @@
+/* CSS HEX
+--rich-black-fogra-39: #020300ff;
+--gainsboro: #dee5e5ff;
+--sonic-silver: #747274ff;
+--rebecca-purple: #642ca9ff;
+--safety-yellow: #f1d302ff; */
+
+/* Global styles------------------------------------------------------ */
+*{
+  /* box-sizing: border-box; */
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #0F0F0F;
+  color: #dee5e5;
+  height:100%;
+  font-family: 'Playfair Display', serif;
+}
+
+/* h1, h2{
+  font-family: 'Playfair Display', serif;
+} */
+
+/* For certain areas that need lighter text */
+/* .light-text{
+  font-weight: 200;
+} */
+
+/* ----------------------------------------------------------------------
+ Landing page*/
+
+/* the following if for the opening Page
+It's to cover the entire screen */
+ .landing-page{
+   width: 100%;
+   height: 100%;
+   background-image: url("landing_page_bg.jpeg");
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ .wrapper{
+   width: 100%;
+   height: 100%;
+   background-color: #020300cc;
+   background-size: cover;
+   padding-bottom: 100px;
+   overflow: hidden;
+   position: relative;
+ }
+
+/* styles for the navigation bar */
+.nav-bar{
+  background-color: #642ca9;
+  height: 60px;
+  overflow: hidden;
+}
+
+.nav-keys{
+  padding-top: 20px;
+}
+
+.nav-keys :hover{
+  color: blue;
+}
+
+/* To show the page that a user is on from the navigation links */
+.current-link{
+  color: #f1d302;
+}
+
+#current-link :hover{
+  color: blue;
+}
+
+
+.logo a:hover{
+  color: white;
+}
+
+.nav-bar a{
+  display: inline;
+  margin: 10px 20px;
+  padding: 10px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #dee5e5;
+}
+/* All nav elements float to the right while the logo remain left */
+.right{
+  float: right;
+}
+
+/* The logo should be different form the navigation links */
+.logo a{
+  letter-spacing: 1.12rem;
+  font-size: 1.3rem;
+  color: #f1d302;
+}
+
+.headline{
+  width: 50%;
+  margin:10% 15% 15px;
+}
+
+.headline h1{
+  font-size: 100px;
+}
+
+/* styles for the 'start now' button */
+.button-link{
+  padding: 10px 40px;
+  background-color: #f1d302;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #642ca9;
+}
+
+.headline a:hover{
+  background-color: #642ca9;
+  color: #f1d302;
+}
+
+.header-description{
+  padding: 25px;
+  margin: 75px 20px 0 50px;
+  border-top: 2px solid #dee5e5;
+  color: #dee5e5;
+  font-size: 1.5rem;
+
+}
+
+
+ /* -------------------------------------------------------------------------
+ Rest of the home page */
+
+.featured-lessons{
+  width: 60%;
+  background-color: #020300;
+  color: #dee5e5;
+  margin: 0 auto 120px;
+  padding: 80px;
+}
+
+.headline2{
+  font-size: 70px;
+  margin-left: 40px;
+  width: 40%;
+}
+
+/* setting up the flip card, dimensions, margin etc */
+.flip-card {
+  background-color: transparent;
+  width: 600px;
+  height: 300px;
+  perspective: 1000px;
+  margin: auto;
+  border-bottom: 1px solid grey;
+}
+
+/* setting up the animation and postion relative to the parent element */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+
+}
+
+/* when a mouse is hovered the ard will rotate on the x-axis (vertically) */
+.flip-card:hover .flip-card-inner {
+  transform: rotateX(180deg);
+}
+
+/* properties for the back and fornt of the card */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* -webkit-backface-visibility: hidden; */
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* this is to add the images as background for the cards */
+#ca{
+  background-image: url("css_animations_bg.JPEG");
+}
+
+#rw{
+  background-image: url("responsive_websites_bg.JPEG");
+}
+
+#ld{
+  background-image: url("layout_design_bg.JPEG");
+}
+
+.flip-card-front {
+  color: white;
+  font-size: 1.4rem;
+}
+
+/* provides a nice transparency black overlay allowing us to see text clearly */
+.color-overlay{
+    background-color: #020300cc ;
+width: 100%;
+height: 100%;
+display: flex ;
+justify-content: center;
+align-items: center;
+}
+
+.img-bg :hover{
+  display: none;
+}
+
+.flip-card-back {
+  background-color: #020300;
+  color: white;
+  transform: rotateX(180deg);
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+/* for padding around the letters on the other side of the flip card */
+.space{
+	width: 80%;
+}
+
+/* for the section with the quote */
+.css-quote{
+  width: 100%;
+  height: 100%;
+  background-image: url("quote_bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.css-quote p{
+  font-size: 90px;
+  color: #dee5e5;
+  width: 65%;
+  margin: auto;
+  padding: 200px 30px 100px;
+}
+
+.quote-change-text{
+  color: #642ca9;
+}
+
+/* for the section with text about tailored content */
+.tailored-course-section{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+    text-align: center;
+
+}
+
+.tailored-course-text p{
+  font-size: 80px;
+  width: 65%;
+  color: #dee5e5;
+  margin: 0 auto 60px;
+
+}
+
+.tailored-course-text a:hover{
+  background-color: #642ca9;
+  color: #f1d302;
+}
+
+.small-line{
+  margin: 80px auto;
+  width: 120px;
+  height: 3px;
+  background-color: #642ca9;
+  display: block;
+}
+
+.tailored-course-section img{
+  width: 300px;
+  height: 250px;
+  border: 1px solid white;
+  margin: 50px auto;
+}
+
+/* for the lastsection of the page before the footer where a user can sign up */
+.sign-up-section{
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  background-image: url("sign_up_bg3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sign-up-info h2{
+  font-size: 90px;
+  border-bottom: 1px solid #020300;
+  color: #dee5e5;
+  margin: 50px 35px;
+  padding: 10px 30% 50px 10%;
+}
+
+.sign-up-info p{
+  font-size: 1.2rem;
+  color: #f1d302;
+  font-weight: lighter;
+  padding: 20px 50% 30px 10% ;
+}
+
+.sign-up-info{
+  height: 80%;
+
+}
+
+.sign-up-forms{
+  height: 20%;
+  width: 100%;
+  background-color: #020300b3;
+  background-size: cover;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  overflow: hidden;
+  position: relative;
+  margin: auto 0;
+}
+
+form{
+  width: 80%;
+  margin: auto;
+}
+
+/* for the submit your email section of the page */
+input[type=text], select{
+  display: inline;
+  width: 70%;
+  height: 60px;
+  padding: 10px 20px;
+  margin: 0;
+  color: #dee5e5;
+  background-color: #dee5e5b3;
+}
+
+input[type=submit], select{
+  display:inline;
+  width: 20%;
+  padding: 12px 0px 28px;
+  margin: 0;
+  color: #dee5e5;
+  background-color: #747274cc;
+font-size: 35px;
+}
+
+/* ----------------------------------------------------------------------
+ Footer*/
+
+/* the nav bar has been placed at the bottom again but with a black background this time */
+ #footer-nav-bar{
+   background-color: black;
+ }
+
+.footer-info{
+    padding: 80px 0 20px 15px;
+    font-size: 1.1rem;
+  }
+
+ /* ----------------------------------------------------------------------
+  Quiz page*/
+
+/* to fill the entire page */
+.start-quiz{
+  width: 100%;
+  height:100%;
+}
+/* for animating the quiz start background */
+@keyframes mymove {
+  from {background-color: #642ca9;}
+  to {background-color: #020300;}
+}
+
+/* The start button */
+.start-quiz p{
+  text-align: center;
+  width: 14rem;
+  margin: auto;
+  padding: 20px 40px;
+  background-color: #f1d302;
+  vertical-align: middle;
+  font-size: 3rem;
+  border-radius: 4px;
+  color: #642ca9;
+}
+
+.start-quiz p:hover{
+  cursor: pointer;
+}
+
+/* background for the start page for the quiz */
+.start-button-wrap{
+  animation: mymove 5s infinite;
+  margin: auto;
+  padding: 25% 0;
+}
+
+/* Style for the container of the quiz */
+.quiz-wrap {
+    color: #dee5e5;
+    background-color: #020300;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.2);
+    overflow: hidden;
+    width: 600px;
+    max-width: 100%;
+    margin: 100px auto;
+}
+
+.quiz-header {
+    padding: 4rem;
+}
+
+/* Style for the question text */
+h2 {
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+/* I used lists for the multiple choice answers and the styles are the following */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+ul li label {
+    cursor: pointer;
+    width: 100%;
+    display: inline-block;
+}
+
+li{
+
+  padding: 20px;
+  margin: 35px;
+/*   border: 0px solid; */
+  background-color: #642ca9;
+  border-radius: 4px;
+  color: #dee5e5;
+}
+
+/* Styles for the submit button for the quiz */
+button {
+    background-color: #f1d302;
+    border: none;
+    color: #642ca9;
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-size: 1.1rem;
+    width: 20%;
+    margin: 50px auto;
+    border-radius: 4px;
+    padding: 1.3rem;
+}
+
+button:hover {
+    background-color:#642ca9;
+    color: #f1d302;
+}
+
+button:focus {
+    background-color: #5e3370;
+    outline: none;
+    color: #dee5e5;
+}
+
+/* the overlay effect that produces feedback is created by the following recommended
+one is for the background and the other is for the text */
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 30px;
+  color: white;
+  transform: translate(-50%,-50%);
+  /* -ms-transform: translate(-50%,-50%); */
+}
+/* Correct and incorrect amswer messages have different colors defined by the following */
+  .incorrect{
+    color: red;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .correct{
+    color: #32ff7e;
+    text-align: center;
+    font-size: 40px;
+  }
+
+/* The opening page for the quiz before user has access to the quiz */
+  #quiz-start-page {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: mymove 5s infinite;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+  /* ----------------------------------------------------------------------
+   Lessons Page*/
+
+/* to make a fixed one page page that doesn't scroll and stays in palce */
+   #coming-soon {
+     position: fixed;
+     display: block;
+     width: 100%;
+     height: 100%;
+     top: 60px;
+     left: 0;
+     right: 0;
+     bottom: 0;
+
+   }
+
+   .coming-sn{
+     background-image: url(sign_up_bg3.jpeg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+   }
+/* thsi is to align the coming soon text vertcially and horizontally */
+   .cont-text{
+     position: absolute;
+     top: 40%;
+     left: 50%;
+     font-size: 30px;
+     color: white;
+     transform: translate(-50%,-50%);
+     /* -ms-transform: translate(-50%,-50%); */
+     font-size: 3rem;
+     border-bottom: 1px solid grey;
+     padding-bottom: 20px;
+   }
+
+   /* ----------------------------------------------------------------------
+    Contact Us Page*/
+
+    /* used as a point of reference in positioning  */
+.cu-body-class{
+  position: absolute;
+  height: 100%;
+}
+/* A container for the some content and acts as way to position the elements of the individually
+Its also to maintaim the size and measuring the size of the elements inside */
+.overall-page{
+  position: relative;
+  width:100%;
+  height: 70%;
+}
+
+/* This is for separating the top part of the page with the bottom
+The top part is only suppsod to have the image and a bit of text and this specifies where it ends and start on the Page
+It also sets the backgrounds as an image */
+.content-wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:70%;
+  background-image: url(question_bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.social-media-icons{
+  margin: 20px auto 0;
+  text-align: center;
+}
+
+/* it's for making the horizontal line below the image section in the contact page */
+.hr{
+  display: block;
+  width: 10rem;
+  height: 1px;
+  background-color: #dee5e5;
+  margin: 40px auto;
+}
+
+/* its for making vertical lines separating the icons */
+.vr{
+  display: inline-block;
+  width: 1px;
+  height: 2rem;
+  margin: auto;
+  background-color: #dee5e5;
+}
+
+/* specifies the size and color of the icons */
+i{
+  font-size: 2rem;
+  padding: 2rem;
+  color: #dee5e5;
+}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #020300;
+  color: #f1d302;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  background-color: #020300;
+  margin: 0;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #0F0F0F;
+  resize: none;
+  min-height: 200px;
+  color: #dee5e5;
+}
+/* specifies the height of the email textarea */
+.form-container textarea#email-area {
+  min-height: 50px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #1E1E1E;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #642ca9;
+  color: #f1d302;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add background color to the cancel button and color to the text */
+.form-container .cancel {
+  background-color: #1E1E1E;
+  color: #dee5e5;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}

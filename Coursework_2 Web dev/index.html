@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://kit.fontawesome.com/ef90bc0ae5.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <title>CSSSCHOOL</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Playfair+Display&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- The navigation bar at the top   -->
+          <div class="nav-bar">
+            <div class="nav-keys">
+              <span class="logo"> <a href="index.html">CSSSCHOOL</a> </span>
+
+                <span class="right">
+                  <a href="index.html" class="current-link">HOME</a>
+                  <a href="lessons.html">LESSONS</a>
+                  <a href="quiz.html" id="quiz-button">POP QUIZ</a>
+                  <a href="contactUs.html">CONTACT US</a>
+                </span>
+            </div>
+          </div>
+
+<!-- The start page foe the site which covers the whole screen before scrolling -->
+          <div class="landing-page">
+            <div class="wrapper">
+            <div class="headline">
+              <h1>The best way to learn CSS</h1>
+              <a class="button-link" href="#fl">Start Now!</a>
+            </div>
+            <div class="header-description">
+              <p class="light-text">Join thousands of people who find it easier to learn CSS with us.</p>
+            </div>
+        </div>
+      </div>
+
+<!-- the next section of the site which shares a few details on the courses offered by the site -->
+      <div class="headline2" id="fl"> <h1>Featured Lessons</h1> </div>
+
+      <div class="featured-lessons" >
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front" id="ld">
+      <div class="color-overlay">
+           <h2>Layout Design</h2>
+      </div>
+    </div>
+   <div class="flip-card-back">
+     <p class="space">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu ante velit. Vestibulum placerat elit massa, quis pulvinar massa posuere congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean a eleifend arcu, in mattis nibh. Fusce rhoncus.</p>
+   </div>
+  </div>
+  </div>
+
+<!-- this is for the flip card section -->
+  <div class="flip-card">
+  <div class="flip-card-inner">
+  <div class="flip-card-front" id="ca">
+  <div class="color-overlay">
+     <h2>CSS Animations</h2>
+  </div>
+  </div>
+  <div class="flip-card-back">
+  <p class="space">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu ante velit. Vestibulum placerat elit massa, quis pulvinar massa posuere congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean a eleifend arcu, in mattis nibh. Fusce rhoncus.</p>
+  </div>
+  </div>
+  </div><div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front" id="rw">
+      <div class="color-overlay">
+           <h2>Responsive Websites</h2>
+      </div>
+    </div>
+   <div class="flip-card-back">
+     <p class="space">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu ante velit. Vestibulum placerat elit massa, quis pulvinar massa posuere congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean a eleifend arcu, in mattis nibh. Fusce rhoncus.</p>
+   </div>
+  </div>
+  </div>
+  </div>
+
+<!-- the section with the quote -->
+      <div class="css-quote">
+        <div class="wrapper">
+        <p> "Intuative design happen when <span class="quote-change-text">curent knowledge</span> is the same as the <span class="quote-change-text">target knowledge</span>"</p>
+        </div>
+      </div>
+
+      <div class="tailored-course-section">
+        <img src="tailored-course-img.jpeg" alt="">
+        <div class="small-line"> </div>
+        <div class="tailored-course-text">
+          <p>Courses that are tailored to fit your needs</p>
+          <a class="button-link" href="#">Begin Now!</a>
+        </div>
+      </div>
+
+<!-- this section allows users to sign up for the site -->
+      <div class="sign-up-section">
+        <div class="sign-up-info">
+          <h2>Join our classes today for free</h2>
+          <p>Get access to hours of content made to help you with everything you need to master CSS. From video tutorials to quizzes and practical examples, take your first step to becoming an expert. </p>
+        </div>
+        <div class="sign-up-forms">
+          <form class="" action="index.html" method="post">
+            <!-- <label for="email"></label> -->
+            <input type="text" name="email" value="" placeholder="Enter your email">
+            <label for="sign-up"></label>
+            <input class="button-link" type="submit" name="sign-up" value="Sign Up" id="sign-up">
+          </form>
+        </div>
+
+      </div>
+
+<!-- this is the footer -->
+      <div class="footer">
+        <div class="nav-bar" id="footer-nav-bar">
+          <div class="nav-keys">
+          <span class="logo"> <a href="index.html">CSSSCHOOL</a> </span>
+
+            <span class="right">
+              <a href="index.html" class="current-link">HOME</a>
+              <a href="lessons.html">LESSONS</a>
+              <a href="quiz.html">POP QUIZ</a>
+              <a href="contactUs.html">CONTACT US</a>
+            </span>
+          </div>
+        </div>
+            <div class="footer-info">
+              <p class="light-text">Posted on April 30, 2021</p>
+              <p class="light-text">&copy; copyright WeMentor Organisation</p>
+            </div>
+    </div>
+      <script src="start.js" defer></script>
+  </body>
+</html>

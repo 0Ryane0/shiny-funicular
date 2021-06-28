@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://kit.fontawesome.com/ef90bc0ae5.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>Document</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body >
+    <div class="nav-bar">
+          <div class="nav-keys">
+            <span class="logo"> <a href="index.html">CSSSCHOOL</a> </span>
+              <span class="right">
+                <a href="index.html">HOME</a>
+                <a href="lessons.html">LESSONS</a>
+                <a href="quiz.html" class="current-link">POP QUIZ</a>
+                <a href="contactUs.html">CONTACT US</a>
+              </span>
+          </div>
+        </div>
+
+<!-- this is the opening page of the quiz
+It becomes an overlay that covers the screen until the uder presses start -->
+        <div class="start-quiz" id="quiz-start-page">
+          <div class="start-button-wrap">
+              <p id="quiz-btn">Start Quiz</p>
+          </div>
+        </div>
+
+<!-- This is the main code for the quizzes
+An empty template of how the questions are to be set up is written here and the question are passed by Javascript from an array into the form.
+The form below is only the format for one question that all questions are to follow -->
+       <div class="quiz-container" id="quiz">
+         <div class="quiz-wrap">
+           <div class="quiz-header">
+               <h2 id="question">Question text</h2>
+               <ul>
+                   <li>
+                       <input
+                           type="radio"
+                           id="a"
+                           name ="answer"
+                           class="answer"
+                       />
+                       <label id="a_text" for="a">Question</label>
+                   </li>
+                   <li>
+                       <input
+                           type="radio"
+                           id="b"
+                           name="answer"
+                           class="answer"
+                       />
+                       <label id="b_text" for="b">Question</label>
+                   </li>
+                   <li>
+                       <input
+                           type="radio"
+                           id="c"
+                           name="answer"
+                           class="answer"
+                       />
+                       <label id="c_text" for="c">Question</label>
+                   </li>
+                   <li>
+                       <input
+                           type="radio"
+                           id="d"
+                           name="answer"
+                           class="answer"
+                       />
+                       <label id="d_text" for="d">Question</label>
+                   </li>
+               </ul>
+           </div>
+           </div>
+         <button id="submit">Submit</button>
+       </div>
+
+<!-- Thsi is the code that will display the Feedback
+Text is pssed here from javascript and uses CSS to display to the user when they get answers wrong -->
+      <div id="overlay" >
+       <div id="text"><p>Overlay </p></div>
+    </div>
+      <script src="main.js" defer></script>
+   </body>
+</html>

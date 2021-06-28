@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://kit.fontawesome.com/ef90bc0ae5.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body class="cu-body-class">
+
+    <!-- The navigation bar at the top   -->
+          <div class="nav-bar">
+            <div class="nav-keys">
+              <span class="logo"> <a href="index.html">CSSSCHOOL</a> </span>
+
+                <span class="right">
+                  <a href="index.html" >HOME</a>
+                  <a href="lessons.html">LESSONS</a>
+                  <a href="quiz.html" id="quiz-button">POP QUIZ</a>
+                  <a href="contactUs.html" class="current-link">CONTACT US</a>
+                </span>
+            </div>
+          </div>
+
+<!-- this was made to make the page a single page without any scrolling  -->
+        <div class="overall-page">
+          <div class="content-wrapper">
+            <div class="color-overlay">
+              <h1>Have question?</h1>
+              <h2>Get in contact with us</h2>
+            </div>
+            <div class="social-media-icons">
+              <span class="hr"></span>
+              <span class="vr"></span>
+            <a href="#">  <i class="far fa-envelope"></i></a>
+              <span class="vr"></span>
+            <a href="#">  <i class="fab fa-facebook"></i></a>
+              <span class="vr"></span>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <span class="vr"></span>
+            <a href="#">  <i class="fab fa-twitter"></i></a>
+              <span class="vr"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- this is the code for the popup feedback window.
+      Two teaxt areas are declred as one is for user emails so they could get replies.  -->
+        <button class="open-button" id="popUp">Send us a message</button>
+        <div class="chat-popup" id="myForm">
+          <form action="contactUs.html" class="form-container">
+            <h1>Questions and Feedback</h1>
+
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" id="msg" required></textarea>
+
+            <label for="email-area"><b>Email Address</b></label>
+            <textarea id="email-area" placeholder="Enter your email.." name="email" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" id="close-btn">Close</button>
+          </form>
+        </div>
+
+<!-- this is the footer -->
+      <div class="footer" >
+
+            <div class="footer-info">
+              <p class="light-text">Posted on April 30, 2021</p>
+              <p class="light-text">&copy; copyright CSSSCHOOL</p>
+            </div>
+    </div>
+      <script src="start.js" defer></script>
+  </body>
+</html>
