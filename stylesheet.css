@@ -1,0 +1,368 @@
+/* color palette
+CSS
+--jet: #2a2b2eff;
+--platinum: #e5e5e5ff;
+--white: #ffffffff;
+--persian-red: #d1302eff;
+--royal-blue-dark: #012e6dff; */
+
+/* -----------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+Global Styles*/
+body{
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height:100%;
+  color: black;
+  box-sizing: border-box;
+}
+
+.right{
+  float: right;
+}
+
+.left{
+  float: left;
+}
+
+/* -----------------------------------------------------------------------------------------------
+Header*/
+
+
+/* -----------------------------------------------------------------------------------------------
+Footer*/
+
+
+
+/* -----------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+Home Page*/
+
+/* -----------------------------------------------------------------------------------------------
+landing Page*/
+
+/* .wrapper{
+  width: 100%;
+  height: 60%;
+  postion: absolute;
+  background-color: red;
+} */
+
+.landing-page{
+  max-width: 100%;
+  width: 2000px;
+  height: 60%;
+  background-color: #e5e5e5ff;
+  overflow: hidden;
+  padding: 150px 10px ;
+/*   position: absolute; */
+  margin: 0;
+}
+
+.center{
+  text-align: center;
+}
+
+.main-header{
+  font-size: 2rem;
+  color: #012e6dff;
+}
+
+.other-header{
+  color: #012e6dff;
+}
+
+.head-subtitle{
+  font-size: 1.8rem;
+}
+
+.student-programs{
+display: flex;
+justify-content: center;
+}
+
+.student-prog-boxes{
+  width: 40%;
+  margin: 50px 20px 50px 80px;
+  display: inline-block;
+
+}
+
+.student-prog-boxes {
+  font-size: 0.7rem;
+}
+
+.student-prog-boxes h2{
+  font-size: 1.8rem;
+}
+
+.link-boxes{
+  margin-top: 80px;
+}
+
+.link-box-size{
+  display: inline-block;
+  width: 45%;
+  height: 145px;
+  margin: 5px;
+  padding: 0;
+  border: solid black 1px;
+  background-color: rgba(0,0,0,0.3);
+  background-blend-mode: multiply;
+}
+
+.big-img-frame{
+  width: 45%;
+  height: 500px;
+  border: solid black 1px;
+  margin: 50px 80px 50px 20px;
+  align-items: right;
+  padding: 0;
+  background-image: url("Images/student_life1.jpeg");
+}
+
+.big-title-video{
+/*   width: 100%; */
+  height: 300px;
+  border: solid black 1px;
+  margin: 50px 80px;
+}
+
+
+
+#overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1.2rem;
+  color: white;
+  transform: translate(-50%,-50%);
+  /* -ms-transform: translate(-50%,-50%); */
+}
+
+.box-1
+{
+  background-image: url("Images/culture_program.jpeg");
+  background-size: cover;
+
+}
+
+.box-2
+{
+  background-image: url("Images/volunteer_program.jpeg");
+  background-size: cover;
+}
+
+.box-3
+{
+  background-image: url("Images/mentorship_program.jpeg");
+  background-size: cover;
+}
+
+.box-4
+{
+  background-image: url("Images/training_program.jpeg");
+  background-size: cover;
+}
+
+.link-box-size:hover{
+
+  background-color: rgba(0,0,0,0.8);
+  box-shadow: 5px 5px 10px;
+}
+
+.hidden_text{
+ font-size: 1.1rem;
+ width: 70%;
+ /* display: none; */
+}
+
+
+.learn_more{
+  text-decoration: underline;
+  color: cyan;
+  cursor: pointer;
+}
+
+.mini_overlayy {
+  position:
+  width: 100%;
+  height: 100%;
+  top: 0%;
+margin: 0;
+  background-color: rgba(0,0,0,0.0);
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+.mini_box_text{
+  position: relative;
+  top: 65%;
+  left: 10%;
+  font-size: 1.2rem;
+  color: white;
+  /* transform: translate(-50%,-50%); */
+  /* -ms-transform: translate(-50%,-50%); */
+}
+
+.meet_the_team{
+  margin: 30px 1.5%;
+  box-sizing: border-box;
+
+}
+
+.meet_the_team img{
+  width: 30%;
+  height: 400px;
+
+}
+
+hr{
+  margin: 15px;
+}
+
+.team_rwanda{
+  margin: auto;
+  display: inline-block;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+
+}
+
+.team_mur{
+  margin: auto;
+  display: inline-block;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+
+}
+
+.team_member{
+  /* float: left; */
+  margin: 45px;
+  display: inline-block;
+}
+
+.flip-card {
+  background-color: transparent;
+  height: 370px;
+  min-width: 185PX;
+  width: 407px;
+  min-height: 204px;
+  w
+  perspective: 1000px;
+  margin: auto;
+  border: 1px solid grey;
+}
+
+
+
+/* setting up the animation and postion relative to the parent element */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+
+}
+
+/* when a mouse is hovered the ard will rotate on the x-axis (vertically) */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* properties for the back and fornt of the card */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card-front {
+  color: white;
+  font-size: 1.4rem;
+}
+
+
+/* provides a nice transparency black overlay allowing us to see text clearly */
+.color-overlay{
+    background-color: #020300cc ;
+width: 100%;
+height: 20%;
+display: flex ;
+/* justify-content: */
+position: relative;
+bottom: 0px;
+left: 0px;
+right: 0px;
+vertical-align: bottom;
+
+}
+
+.color-overlay h2{
+  vertical-align: bottom;
+}
+
+#kr{
+  background-image: url('Images/ALU-Student-Life-Kevin.jpeg');
+}
+
+#in{
+  background-image: url('Images/IsaacN.jpeg');
+}
+
+#ta{
+  background-image: url('Images/ALU-Student-Life-Tasha.jpeg');
+}
+
+#oo{
+  background-image: url('Images/ALU-Student-Life-Osaretin.jpeg');
+}
+
+#jd{
+  background-image: url('Images/ALU-Student-Life-Joshila.jpeg');
+}
+
+#ab{
+  background-image: url('Images/ALU-Student-Life-Amayo.jpeg');
+}
+
+
+
+
+
+.img-bg :hover{
+  display: none;
+}
+
+.flip-card-back {
+  background-color: #020300;
+  color: white;
+  transform: rotateY(180deg);
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+/* for padding around the letters on the other side of the flip card */
+.space{
+	width: 80%;
+}
